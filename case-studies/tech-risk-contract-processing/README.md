@@ -8,7 +8,7 @@
 
 **Status:** MVP proof-of-concept (not production)
 
-## One-line summary
+## Summary
 
 An AI-assisted workflow that reads vendor/technology contracts, flags risk-relevant clauses, and routes them to the right human reviewer — cutting first-pass review time while keeping a human in the loop for every high-risk decision.
 
