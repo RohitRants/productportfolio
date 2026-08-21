@@ -7,7 +7,7 @@
 
 ## One-line summary
 
-*(Fill in after 01–08 are complete — e.g. "An AI-assisted workflow that reads vendor/technology contracts, flags risk-relevant clauses, and routes them to the right human reviewer — cutting first-pass review time while keeping a human in the loop for every high-risk decision.")*
+An AI-assisted workflow that reads vendor/technology contracts, flags risk-relevant clauses, and routes them to the right human reviewer — cutting first-pass review time while keeping a human in the loop for every high-risk decision.
 
 ## Why this case study
 
