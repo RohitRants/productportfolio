@@ -1,4 +1,4 @@
-# [Your Name] — AI Product Manager Portfolio
+# Rohit Kumar — AI Product Manager Portfolio
 
 I'm an AI Product Manager with 5+ years of experience building products at the intersection of business risk, compliance, and applied AI. This repository is a working portfolio of case studies — each one shows how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
 
@@ -41,8 +41,12 @@ Most AI PM case studies stop at "here's a cool demo." I wanted mine to also answ
 
 ## About me
 
-*(Short bio — role, industry background, why AI product management, 2–3 lines)*
+With a strong foundation in Agile methodologies and cross-functional program leadership, Rohit specializes in bridging business vision with technical execution to deliver impactful, data-driven products. At Morgan Stanley, he leads high-impact initiatives that connect business goals with engineering outcomes, focusing on delivery excellence, stakeholder alignment, and continuous improvement. 
+
+His expertise spans managing Agile teams, optimizing delivery pipelines, and leveraging analytics to inform strategic decisions. Rohit thrives at the intersection of AI, product management, and technical program delivery—ensuring that product solutions are both innovative and user-focused. 
+
+Rohit is passionate about using technology to solve real-world problems and create products that learn, adapt, and deliver personalized value. If you're interested in collaborating or discussing product management, AI, or Agile delivery, let’s connect!
 
 ## Contact
 
-*(LinkedIn / email / portfolio site)*
+*[Linkedin](https://www.linkedin.com/in/rohit--kumar/)*
