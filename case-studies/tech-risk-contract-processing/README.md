@@ -1,8 +1,11 @@
 # Case Study: AI-Automated Contract Processing for Technology Risk
 
 **Industry:** Investment Banking
+
 **Function:** Technology Risk / Vendor & Outsourcing Risk Management
+
 **Role simulated:** AI Product Manager
+
 **Status:** MVP proof-of-concept (not production)
 
 ## One-line summary
