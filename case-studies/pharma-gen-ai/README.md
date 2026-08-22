@@ -2,7 +2,7 @@
 
 ## About me
 
-This repo is my answer to "show me you can do AI product management in a regulated industry" — specifically pharmaceutical business development, where the upside of GenAI (faster market scans, faster due diligence, faster business cases) is real, but so is the downside of an ungoverned model touching confidential deal data or making an unverified claim that ends up in a board deck.
+This repo is my answer to "show how can one do AI product management in a regulated industry" — specifically pharmaceutical business development, where the upside of GenAI (faster market scans, faster due diligence, faster business cases) is real, but so is the downside of an ungoverned model touching confidential deal data or making an unverified claim that ends up in a board deck.
 
 **Why pharma BD:** it's a domain where product management is inseparable from risk management. Every use case below has to answer "who is accountable if this is wrong" before it answers "what does the UI look like."
 
