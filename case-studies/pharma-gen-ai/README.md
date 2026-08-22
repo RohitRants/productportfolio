@@ -3,10 +3,6 @@
 
 ## About me
 
-*[Your name] — AI Product Manager | 5+ years in [your domain, e.g. enterprise SaaS / fintech / healthcare ops]*
-
-I'm not from a pure engineering background, and this repo isn't trying to pretend otherwise. What I bring is product judgment: the ability to take an ambiguous, high-stakes business problem, decide what an AI system should and shouldn't be trusted to do, and design the guardrails, review points, and stakeholder workflow around it so the thing actually survives contact with Legal, Compliance, and Regulatory Affairs.
-
 This repo is my answer to "show me you can do AI product management in a regulated industry" — specifically pharmaceutical business development, where the upside of GenAI (faster market scans, faster due diligence, faster business cases) is real, but so is the downside of an ungoverned model touching confidential deal data or making an unverified claim that ends up in a board deck.
 
 **Why pharma BD:** it's a domain where product management is inseparable from risk management. Every use case below has to answer "who is accountable if this is wrong" before it answers "what does the UI look like."
