@@ -1,8 +1,8 @@
-# Rohit Kumar — AI Product Manager Portfolio
+# Rohit Kumar — Product Manager Portfolio
 
-I'm an AI Product Manager with 5+ years of experience building products at the intersection of business risk, compliance, and applied AI. This repository is a working portfolio of case studies — each one shows how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
+This repository is a working portfolio of case studies — each one shows how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
 
-Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly — paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good AI PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a system a bank, or Apple, or Netflix could actually ship.
+Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly — paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a scalable system.
 
 ## How to read this repo
 
@@ -21,10 +21,10 @@ flowchart LR
 
 ## Case Studies
 
-| # | Case Study | Domain | Status |
-|---|---|---|---|
-| 1 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking — Technology Risk | In progress |
-| 2 | *(coming soon)* | | |
+| # | Case Study | Domain |  
+|---|---|---|
+| 1 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking — Technology Risk | 
+| 2 | [GenAI in Pharma Business Development](./case-studies/pharma-gen-ai) | Pharmaceutical Industry - Business Development |
 | 3 | *(coming soon)* | | |
 
 ## Why this structure
