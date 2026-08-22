@@ -1,8 +1,11 @@
 # 06 — Portfolio & Pipeline Intelligence
 
 **Risk Tier:** Medium — internal-facing, but touches cross-functional data with varying sensitivity.
+
 **Agents used:** Research/Aggregation Agent, scoped to internal-approved data sources only (no external web search for this use case).
+
 **Human checkpoint:** Portfolio management lead confirms any cross-program comparison before it's shared outside the immediate portfolio team.
+
 **Leans hardest on:** AI Governance Readiness — this is the use case most likely to quietly expand into "connect the agent to everything," which is exactly what the framework's use-case registration step (Step 1/7) exists to prevent.
 
 ## Scenario
