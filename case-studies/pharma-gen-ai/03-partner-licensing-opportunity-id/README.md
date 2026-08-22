@@ -1,8 +1,11 @@
 # 03 — Partner & Licensing Opportunity Identification
 
 **Risk Tier:** Medium-High — surfaces candidates for real relationships and deal conversations.
+
 **Agents used:** Research Agent, plus a scoring/ranking step (rules-based, not a black-box AI score — see below).
+
 **Human checkpoint:** Business Development Director reviews the shortlist before any outreach is considered.
+
 **Leans hardest on:** Human & Organizational Readiness — this use case fails if BD teams treat the shortlist as a to-do list rather than a starting point for their own judgment.
 
 ## Scenario
