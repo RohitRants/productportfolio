@@ -4,21 +4,6 @@ This repository is a working portfolio of case studies — each one shows how I 
 
 Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly — paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a scalable system.
 
-## How to read this repo
-
-Every case study folder follows the same numbered structure, so you can read top to bottom like a narrative, or jump to the section you care about:
-
-```mermaid
-flowchart LR
-    A[01 Problem Framing] --> B[02 Stakeholders and RACI]
-    B --> C[03 Product Decisions]
-    C --> D[04 AI Architecture and Guardrails]
-    D --> E[05 MVP Build Prompt]
-    E --> F[06 Mockups and Screens]
-    F --> G[07 MVP vs Production]
-    G --> H[08 Success Metrics and KPIs]
-```
-
 ## Case Studies
 
 | # | Case Study | Domain |  
