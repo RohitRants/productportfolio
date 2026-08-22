@@ -1,8 +1,11 @@
 # 04 — Due Diligence Support
 
 **Risk Tier:** High — often touches counterparty-confidential data room material.
+
 **Agents used:** Document Review Agent (specialized Research/Verification Agent, see [shared framework](../00-shared-framework/agentic-ai-framework.md)) — scoped to summarizing and flagging, never concluding.
+
 **Human checkpoint:** Named diligence lead signs off on every flagged item before it's escalated or dismissed.
+
 **Leans hardest on:** Data Governance Readiness — this is the use case in this repo where data classification and confidentiality controls are the whole ballgame, not a side concern.
 
 ## Scenario
