@@ -1,8 +1,11 @@
 # 01 — Business Case & Strategic Analysis (Flagship)
 
 **Risk Tier:** High — output directly informs go/no-go investment decisions.
+
 **Agents used:** Research Agent, Financial Modeling Agent, Risk Classification Agent, Drafting Agent (all defined in [the shared framework](../00-shared-framework/agentic-ai-framework.md); Financial Modeling Agent is specific to this use case, defined below).
+
 **Human checkpoint:** Corporate Strategy Director signs off before any business case leaves draft status.
+
 **Leans hardest on:** Process Readiness — the deliverable is a recommendation, not a fact, so the audit trail of how it was reached matters as much as the recommendation itself.
 
 ## Why this is the flagship
