@@ -21,7 +21,7 @@ Of the six use cases in this repo, this is the one where "the AI is right" is ne
 
 ## Live prototype
 
-🔗 *[Add your Lovable AI published app link here once built]*
+🔗 [Lovable demo link](https://corp-strategy-aid.lovable.app)
 
 ## The scenario, in one paragraph
 
