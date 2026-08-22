@@ -1,8 +1,11 @@
 # 02 — Market & Competitor Intelligence
 
 **Risk Tier:** Medium — informs strategic awareness, not a standalone decision.
+
 **Agents used:** Research Agent (see [shared framework](../00-shared-framework/agentic-ai-framework.md)), specialized for continuous competitor monitoring rather than one-off queries.
+
 **Human checkpoint:** Commercial Strategy analyst reviews and annotates the weekly digest before it's distributed beyond the immediate team.
+
 **Leans hardest on:** Process Readiness (this is a recurring, not one-off, output — without a review cadence it silently degrades into "trusted without checking").
 
 ## Scenario
