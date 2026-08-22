@@ -1,4 +1,4 @@
-# GenAI in Pharma Business Development — An AI Product Manager Portfolio
+# Case Study: GenAI in Pharma Business Development
 
 ## About me
 
