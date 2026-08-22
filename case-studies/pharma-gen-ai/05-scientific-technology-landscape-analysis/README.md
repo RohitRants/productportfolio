@@ -1,8 +1,11 @@
 # 05 — Scientific & Technology Landscape Analysis
 
 **Risk Tier:** Medium — informs strategic direction, but sits closer to research synthesis than deal execution.
+
 **Agents used:** Research Agent, specialized to weight peer-reviewed and regulatory sources over general web content.
+
 **Human checkpoint:** A named scientific/medical reviewer (not just a BD analyst) validates any clinical or mechanistic claim before it's used externally.
+
 **Leans hardest on:** Process Readiness for output verification — scientific claims carry a different credibility bar than market or competitive claims.
 
 ## Scenario
