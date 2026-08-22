@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31333267/README.md)
 # GenAI in Pharma Business Development — An AI Product Manager Portfolio
 
 ## About me
