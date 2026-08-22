@@ -71,7 +71,7 @@ Through this prompt an end-to-end. Veridian Strategic Analysis Assistant is buil
 
 **5. Risk Classification** — AI Low/Medium/High verdict with written justification and key drivers, locked behind a "Confirmed by Compliance" checkbox (re-running classification resets the sign-off).
 
-**6. Draft Business Case** — AI assembles all seven sections from only the reviewed findings and prior outputs, under a persistent DRAFT — Pending Human Review banner and striped watermark; "Mark as Final" stays disabled until a reviewer name is entered, then flips to a green FINAL banner.
+**6. Draft Business Case** — AI assembles all seven sections from only the reviewed findings and prior outputs, under a persistent **DRAFT — Pending Human Review** banner and striped watermark; "Mark as Final" stays disabled until a reviewer name is entered, then flips to a green FINAL banner.
 
 **Tip for the interview:** be ready to explain, out loud, why the stepper locks each stage behind a human-review action — that's the one design decision in this prototype that most directly demonstrates the "human oversight" requirement from the [governance framework](../00-shared-framework/agentic-ai-framework.md), not just a generic AI SaaS wizard.
 
