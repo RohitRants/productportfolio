@@ -23,7 +23,7 @@ This repo is my answer to "show how can one do AI product management in a retail
 ---
 
 ```
-retail-ai-pm-portfolio/
+retail-gen-ai/
 ├── README.md                              ← resume-style intro + project index
 ├── docs/
 │   └── governance-and-raci.md             ← shared framework, used by all 3 use cases
