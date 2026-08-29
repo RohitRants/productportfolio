@@ -19,6 +19,32 @@ All six use cases below come from a single proposed framework: a risk-tiered, hu
 | 05 | [Scientific & Technology Landscape Analysis](./05-scientific-technology-landscape-analysis) | One-pager | Bridging scientific credibility with AI-generated synthesis |
 | 06 | [Portfolio & Pipeline Intelligence](./06-portfolio-pipeline-intelligence) | One-pager | Internal-facing intelligence with cross-functional data sensitivity |
 
+---
+
+```
+pharma-genai-bd-portfolio/
+├── README.md
+├── 00-shared-framework/
+│   ├── agentic-ai-framework.md
+│   └── RACI-matrix.md
+├── 01-business-case-strategic-analysis/          (Flagship)
+│   ├── README.md
+│   ├── PRD.md
+│   ├── agent-prompts.md
+│   ├── lovable-prompt.md
+│   └── mockups/
+│       └── README.md
+├── 02-market-competitor-intelligence/
+│   └── README.md
+├── 03-partner-licensing-opportunity-id/
+│   └── README.md
+├── 04-due-diligence-support/
+│   └── README.md
+├── 05-scientific-technology-landscape-analysis/
+│   └── README.md
+└── 06-portfolio-pipeline-intelligence/
+    └── README.md
+```
 Cutting across all six:
 
 - **[Agentic AI Governance Framework](./00-shared-framework/agentic-ai-framework.md)** — the 9-step Regulatory AI Agent Readiness process, the 6 readiness dimensions, and sample agent instructions, applied consistently across every use case.
