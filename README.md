@@ -1,4 +1,4 @@
-# Rohit Kumar — Product Manager Portfolio
+# Rohit Kumar - Product Manager Portfolio
 
 This repository is a working portfolio of case studies — each one shows how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
 
