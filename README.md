@@ -10,7 +10,7 @@ Each case study is **not a production system**. It's a scoped MVP proof-of-conce
 |---|---|---|
 | 1 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking — Technology Risk | 
 | 2 | [GenAI in Pharma Business Development](./case-studies/pharma-gen-ai) | Pharmaceutical Industry - Business Development |
-| 3 | *(coming soon)* | | |
+| 3 | [Gen AI in Retail Inventory Management](./case-studies/retail-gen-ai) | Retail Industry - Inventory Management |
 
 ## Why this structure
 
