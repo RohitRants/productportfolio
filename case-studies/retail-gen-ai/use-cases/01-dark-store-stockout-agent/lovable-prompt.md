@@ -1,6 +1,6 @@
 # Lovable AI Build Prompt — Dark Store Stockout Agent MVP
 
-Below prompt has been used in Lovable AI to generate the clickable prototype. the clickable prototype can be accessed from here [README.md]
+Below prompt has been used in Lovable AI to generate the clickable prototype. the clickable prototype can be accessed from here [README.md](./README.md).
 
 ---
 
