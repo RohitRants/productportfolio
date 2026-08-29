@@ -1,6 +1,6 @@
 # Screen Walkthrough
 
-Prototype is built from [lovable-prompt.md](../lovable-prompt.md),
+Prototype is built from [lovable-prompt.md](),
 
 ## Screen 1 — Store Ops Alert Feed
 
