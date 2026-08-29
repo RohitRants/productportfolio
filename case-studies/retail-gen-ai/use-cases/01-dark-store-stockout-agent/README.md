@@ -1,4 +1,4 @@
-# Dark-Store Stockout Prevention Agent (Flagship)
+# 01 - Dark-Store Stockout Prevention Agent (Flagship)
 
 **Company:** NovaMart Express (fictional composite quick-commerce dark-store chain)
 **Problem:** Preventing stockouts of high-velocity SKUs in 10–15 minute delivery dark stores.
