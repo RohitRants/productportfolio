@@ -20,6 +20,27 @@ This repo is my answer to "show how can one do AI product management in a retail
 | 2 | [Physical-Store Pincode-Level Assortment Agent](use-cases/02-physical-store-assortment/) | One-pager | B2C — traditional retail 
 | 3 | [B2B FMCG-to-Retailer Delivery Agent](use-cases/03-b2b-fmcg-delivery/) | One-pager | B2B 
 
+---
+
+```
+retail-ai-pm-portfolio/
+├── README.md                              ← resume-style intro + project index
+├── docs/
+│   └── governance-and-raci.md             ← shared framework, used by all 3 use cases
+└── use-cases/
+    ├── 01-dark-store-stockout-agent/      ← FLAGSHIP
+    │   ├── README.md
+    │   ├── PRD.md
+    │   ├── agent-framework.md             ← includes the two sample agent prompts
+    │   ├── data-model.md
+    │   ├── lovable-prompt.md
+    │   └── mockup.md                      ← placeholder for your Lovable prototype link
+    ├── 02-physical-store-assortment/
+    │   └── README.md                      ← one-pager
+    └── 03-b2b-fmcg-delivery/
+        └── README.md                      ← one-pager
+
+```
 ## Cross-Cutting Documents
 
 - [Governance, Human Oversight & RACI](docs/governance-and-raci.md) — the shared AI Agent Readiness Framework, oversight controls, and stakeholder RACI applied across all three use cases above. Read this once; every use case references it rather than repeating it.
