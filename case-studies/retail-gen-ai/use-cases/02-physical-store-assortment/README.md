@@ -1,4 +1,4 @@
-# One-Pager: Physical-Store Pincode-Level Assortment Agent
+# 02 - Physical-Store Pincode-Level Assortment Agent
 
 **Company:** NovaMart Express (fictional composite)
 **Problem type:** Allocation — matching store-level assortment to hyperlocal (pincode-level) demand patterns in traditional physical stores.
