@@ -22,7 +22,7 @@ All six use cases below come from a single proposed framework: a risk-tiered, hu
 ---
 
 ```
-pharma-genai-bd-portfolio/
+pharma-gen-ai/
 ├── README.md
 ├── 00-shared-framework/
 │   ├── agentic-ai-framework.md
