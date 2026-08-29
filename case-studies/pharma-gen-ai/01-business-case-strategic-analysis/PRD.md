@@ -3,7 +3,7 @@
 **Product:** GenAI-assisted business case builder for BD/Corporate Strategy
 **Company:** Veridian Therapeutics (fictional/composite)
 **Status:** MVP / proof-of-work — not production-ready
-**Owner:** [Your name], AI Product Manager (candidate portfolio project)
+**Owner:** Rohit Kumar (portfolio-project)
 
 ---
 
