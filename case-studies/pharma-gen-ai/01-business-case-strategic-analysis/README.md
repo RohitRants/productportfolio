@@ -22,7 +22,3 @@ Of the six use cases in this repo, this is the one where "the AI is right" is ne
 ## Live prototype
 
 🔗 [Lovable demo link](https://corp-strategy-aid.lovable.app)
-
-## The scenario, in one paragraph
-
-Veridian Therapeutics (fictional) is evaluating whether to license a Phase II oncology asset from a smaller biotech. Corporate Strategy needs a first-draft business case — market sizing, competitive positioning, deal economics, and risk factors — within days, not the usual six weeks, without skipping the verification steps that make a business case defensible in front of the investment committee.
