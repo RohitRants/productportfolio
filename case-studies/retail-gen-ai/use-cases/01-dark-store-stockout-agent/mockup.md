@@ -1,6 +1,6 @@
-# Mockups: Dark-Store Stockout Prevention Agent
+# Screen Walkthrough
 
-> These screens are implemented as a live, clickable prototype in Lovable AI. Link: **[replace with your published Lovable prototype URL]**. This document describes each screen for reviewers who aren't clicking through the live version.
+Prototype is built from [lovable-prompt.md](../lovable-prompt.md),
 
 ## Screen 1 — Store Ops Alert Feed
 
