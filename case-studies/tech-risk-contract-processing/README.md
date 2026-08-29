@@ -30,7 +30,23 @@ flowchart LR
     F --> G[07 MVP vs Production]
     G --> H[08 Success Metrics and KPIs]
 ```
+---
 
+```
+portfolio/
+├── README.md                                  ← root index + Mermaid diagram
+└── case-studies/
+    └── tech-risk-contract-processing/
+        ├── README.md
+        ├── 01-problem-framing.md
+        ├── 02-stakeholders-raci.md
+        ├── 03-product-decisions.md
+        ├── 04-ai-architecture-guardrails.md
+        ├── 05-mvp-build-prompt.md
+        ├── 06-mockups/README.md
+        ├── 07-mvp-vs-production.md
+        └── 08-success-metrics-kpis.md
+```
 ## Read the case study
 
 | # | File | What it covers |
