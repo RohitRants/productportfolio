@@ -1,14 +1,22 @@
 # Rohit Kumar - Product Manager Portfolio
 
-This repository is a working portfolio of case studies — each one shows how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
+This repository is a working portfolio of case studies and resources which helps me work more efficiently. Additionally case studies showcase how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
 
-Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly — paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a scalable system.
+Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly - paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a scalable system.
+
+## Resources
+
+| # | Prompts | Area |  
+|---|---|---|
+| 1 | [Create Roadmaps, PRDs, Mockups]() | Operational/Every-day work |
+| 2 | | |
+| 3 | | |
 
 ## Case Studies
 
 | # | Case Study | Domain |  
 |---|---|---|
-| 1 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking — Technology Risk | 
+| 1 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking - Technology Risk | 
 | 2 | [GenAI in Pharma Business Development](./case-studies/pharma-gen-ai) | Pharmaceutical Industry - Business Development |
 | 3 | [Gen AI in Retail Inventory Management](./case-studies/retail-gen-ai) | Retail Industry - Inventory Management |
 
