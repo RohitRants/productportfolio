@@ -1,6 +1,6 @@
 # Screen Walkthrough
 
-Prototype is built from [lovable-prompt.md](),
+Prototype is built from [lovable-prompt.md](case-studies/retail-gen-ai/use-cases/01-dark-store-stockout-agent/lovable-prompt.md),
 
 ## Screen 1 — Store Ops Alert Feed
 
