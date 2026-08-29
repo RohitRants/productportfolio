@@ -8,7 +8,7 @@ Each case study is **not a production system**. It's a scoped MVP proof-of-conce
 
 | # | Prompts | Area |  
 |---|---|---|
-| 1 | [Create Roadmaps, PRDs, Mockups]() | Operational/Every-day work |
+| 1 | [Create Roadmaps, PRDs, Mockups](./resources/01-operational/) | Operational/Every-day work |
 | 2 | | |
 | 3 | | |
 
