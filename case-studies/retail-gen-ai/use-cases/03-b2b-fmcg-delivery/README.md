@@ -1,4 +1,4 @@
-# One-Pager: B2B FMCG-to-Small-Retailer Delivery Agent
+# 03 - B2B FMCG-to-Small-Retailer Delivery Agent
 
 **Company:** NovaMart Express Wholesale (fictional composite B2B arm)
 **Problem type:** Allocation/forecasting — matching FMCG supply to small independent retailer demand across a distribution network.
