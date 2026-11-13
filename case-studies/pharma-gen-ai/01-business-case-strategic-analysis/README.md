@@ -15,7 +15,7 @@ Of the six use cases in this repo, this is the one where "the AI is right" is ne
 ## What's in this folder
 
 - **[PRD.md](./PRD.md)** — the full product requirements doc, split into a business-facing section and a technical-reviewer section (data flow, model choice, guardrails).
-- **[agent-prompts](case-studies/pharma-gen-ai/01-business-case-strategic-analysis/agent-prompts)** — the specific agent instructions used in this use case, extending the shared framework's generic roles.
+- **[agent-prompts](https://github.com/RohitRants/productportfolio/tree/main/case-studies/pharma-gen-ai/01-business-case-strategic-analysis/agent-prompts)** — the specific agent instructions used in this use case, extending the shared framework's generic roles.
 - **[lovable-prompt.md](./lovable-prompt.md)** — the exact prompt used to build the working prototype in Lovable AI.
 - **[mockups/](./mockups)** — screen-by-screen walkthrough of the prototype.
 
