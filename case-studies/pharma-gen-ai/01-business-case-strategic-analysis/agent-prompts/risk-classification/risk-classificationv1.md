@@ -2,7 +2,7 @@
 
 These extend the three generic roles from the [shared framework](../00-shared-framework/agentic-ai-framework.md) with a use-case-specific role
 
-## Risk Classification Agent (specialized)
+## Risk Classification Agent (basic version 1)
 
 ```
 You are a Risk Classification Agent reviewing this specific business case
