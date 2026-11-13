@@ -1,6 +1,6 @@
 # Agent Prompts — Business Case & Strategic Analysis
 
-These extend the three generic roles from the [shared framework](../00-shared-framework/agentic-ai-framework.md) with a use-case-specific role, the **Financial Modeling Agent**, and specialize the generic prompts for this scenario.
+These extend the three generic roles from the [shared framework](../00-shared-framework/agentic-ai-framework.md) with a use-case-specific role
 
 ## Risk Classification Agent (specialized)
 
