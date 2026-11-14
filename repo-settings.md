@@ -1,15 +1,11 @@
-# GitHub repo settings (30-second manual paste: About gear icon)
+# GitHub repo settings
 
-**Description** (paste as-is):
+**Description**:
 
 AI product management portfolio: three case studies (pharma BD, retail inventory, bank tech risk) with PRDs, agent architecture, guardrails and Lovable prototypes, plus a rubric-based evaluation of a Risk Classification Agent.
 
-**Website:** the pharma Lovable URL for now; switch to GitHub Pages once enabled.
-
-**Topics** (8):
+**Topics**:
 `ai-product-management` `agentic-ai` `llm-evaluation` `ai-governance` `product-requirements-document` `pharma` `retail-tech` `portfolio`
-
-**Also:** pin this repo on your GitHub profile.
 
 # Before you commit README.md
 
@@ -25,4 +21,4 @@ Search for `{{` in the file. Every token must be replaced:
 | ONE_OUTCOME_WITH_BEFORE_AND_AFTER_NUMBER | one result you influenced, with before and after |
 | WHY_AI_PM_ONE_SENTENCE_IN_YOUR_OWN_WORDS | your real reason; delete if you can't write it honestly |
 
-Keep the "nothing here uses employer data" sentence only if it is true.
+"Nothing here uses employer data"
