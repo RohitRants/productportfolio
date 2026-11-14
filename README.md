@@ -1,14 +1,21 @@
 # Rohit Kumar Portfolio
 
-This repository is a working portfolio of case studies and resources which helps me work more efficiently. Additionally case studies showcase how I frame a problem, make product and architecture decisions under real-world constraints, and validate whether the solution actually worked.
+**Three case studies on shipping AI agents where a confident wrong answer is expensive: pharma business development, retail inventory, and bank technology risk.** Each has a PRD, an agent architecture with named guardrails, a clickable prototype, and an explicit account of what separates the demo from production. The pharma Risk Classification Agent also has a pre-registered evaluation with a ship / no-ship gate.
 
-Each case study is **not a production system**. It's a scoped MVP proof-of-concept, built to demonstrate product and technical reasoning quickly - paired with an explicit section on what would change to make it production-ready. I think this distinction matters: a good PM should be able to move fast on a proof of concept *and* reason clearly about what separates a demo from a scalable system.
+> **Scope, stated plainly.** These are scoped MVP proofs of concept, not production systems. Every company, deal and dataset is fictional or built from public information, and nothing here uses employer data, systems or confidential material.
+
+## Start here (2 minutes)
+
+1. **Test of judgment:** [Evaluation of the Risk Classification Agent]({{EVAL_PATH}}). A written risk policy, 50 cases with rubric-derived labels, naive baselines, and a launch gate fixed before the run.
+2. **Working prototype:** [Pharma business-case assistant]({{PHARMA_LOVABLE_URL}}).
+3. **How I frame a problem:** open any case study below and read `01-problem-framing.md` first.
 
 ## Resources
 
-| # | Prompts | Area |  
+| # | Prompts | Use |  
 |---|---|---|
-| 1 | [Create Roadmaps, PRDs, Mockups](./resources/01-operational/) | Operational/Every-day work |
+| 1 | [Create Roadmaps, PRDs, Mockups](./resources/01-operational/) | System prompt for everyday product work |
+| 2 | [Agent Evaluation Harness]() | Reusable pattern: policy rubric, computed gold labels, deterministic scoring, pre-registered launch gate |
 
 ## Case Studies
 
@@ -17,6 +24,10 @@ Each case study is **not a production system**. It's a scoped MVP proof-of-conce
 | 1 | [GenAI in Pharma Business Development](./case-studies/pharma-gen-ai) | Pharmaceutical Industry - Business Development |
 | 2 | [Gen AI in Retail Inventory Management](./case-studies/retail-gen-ai) | Retail Industry - Inventory Management |
 | 3 | [Tech Risk Contract Processing](./case-studies/tech-risk-contract-processing/) | Investment Banking - Technology Risk | 
+
+## Why these 3 industries
+
+I chose pharma business development, retail inventory and bank technology risk because they share one failure shape: decisions with real money or compliance consequences, inputs that are messy or confidential, and humans who must stay accountable. The same design pattern recurs in all three: narrow single-purpose agents, human-approved inputs, a named owner for every escalation, and a metric that can fail. That pattern, not the industry, is the transferable skill.
 
 ## Why this structure
 
@@ -30,13 +41,15 @@ Most AI PM case studies stop at "here's a cool demo." I wanted mine to also answ
 - **Do you understand the gap between a demo and a real system** → MVP vs Production
 - **How would you know if this succeeded** → Success Metrics and KPIs
 
+## Roadmap (what I am building next, in order)
+
+1. Failure-mode catalog built from the evaluation's actual failures
+2. Cost and latency table for the agents' model choices
+3. Teardown of a shipped AI product, with failure modes I found by probing it myself
+
 ## About me
 
-With a strong foundation in Agile methodologies and cross-functional program leadership, Rohit specializes in bridging business vision with technical execution to deliver impactful, data-driven products. At Morgan Stanley, he leads high-impact initiatives that connect business goals with engineering outcomes, focusing on delivery excellence, stakeholder alignment, and continuous improvement. 
-
-His expertise spans managing Agile teams, optimizing delivery pipelines, and leveraging analytics to inform strategic decisions. Rohit thrives at the intersection of AI, product management, and technical program delivery—ensuring that product solutions are both innovative and user-focused. 
-
-Rohit is passionate about using technology to solve real-world problems and create products that learn, adapt, and deliver personalized value. If you're interested in collaborating or discussing product management, AI, or Agile delivery, let’s connect!
+I lead cross-functional delivery at Morgan Stanley, working with **25+** engineers and **4+** stakeholder groups on a bi-weekly release cadence. {{ONE_OUTCOME_WITH_BEFORE_AND_AFTER_NUMBER}}. **Why AI PM** This portfolio is me practicing that in public: scoped AI agents with named guardrails, human approval points, and evaluations that can fail. I am looking for AI Product Manager roles where shipping safely matters as much as shipping fast.
 
 ## Contact
 
