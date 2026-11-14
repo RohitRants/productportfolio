@@ -49,7 +49,9 @@ Most AI PM case studies stop at "here's a cool demo." I wanted mine to also answ
 
 ## About me
 
-I lead cross-functional delivery at Morgan Stanley, working with **25+** engineers and **4+** stakeholder groups on a bi-weekly release cadence. {{ONE_OUTCOME_WITH_BEFORE_AND_AFTER_NUMBER}}. **Why AI PM** This portfolio is me practicing that in public: scoped AI agents with named guardrails, human approval points, and evaluations that can fail. I am looking for AI Product Manager roles where shipping safely matters as much as shipping fast.
+I lead cross-functional delivery at Morgan Stanley, working with **25+** engineers and **4+** stakeholder groups on a bi-weekly release cadence. {{ONE_OUTCOME_WITH_BEFORE_AND_AFTER_NUMBER}}. 
+
+**Why AI PM** This portfolio is me practicing that in public: scoped AI agents with named guardrails, human approval points, and evaluations that can fail. I am looking for AI Product Manager roles where shipping safely matters as much as shipping fast.
 
 ## Contact
 
