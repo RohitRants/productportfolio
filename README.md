@@ -6,8 +6,8 @@
 
 ## Start here (2 minutes)
 
-1. **Test of judgment:** [Evaluation of the Risk Classification Agent]({{EVAL_PATH}}). A written risk policy, 50 cases with rubric-derived labels, naive baselines, and a launch gate fixed before the run.
-2. **Working prototype:** [Pharma business-case assistant]({{PHARMA_LOVABLE_URL}}).
+1. **Test of judgment:** [Evaluation of the Risk Classification Agent](https://github.com/RohitRants/productportfolio/tree/main/case-studies/pharma-gen-ai/01-business-case-strategic-analysis/agent-prompts/risk-classification). A written risk policy, 50 cases with rubric-derived labels, naive baselines, and a launch gate fixed before the run.
+2. **Working prototype:** [Pharma business-case assistant](https://corp-strategy-aid.lovable.app/).
 3. **How I frame a problem:** open any case study below and read `01-problem-framing.md` first.
 
 ## Resources
