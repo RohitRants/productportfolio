@@ -2,7 +2,7 @@
 
 **Three case studies on shipping AI agents where a confident wrong answer is expensive: pharma business development, retail inventory, and bank technology risk.** Each has a PRD, an agent architecture with named guardrails, a clickable prototype, and an explicit account of what separates the demo from production. The pharma Risk Classification Agent also has a pre-registered evaluation with a ship / no-ship gate.
 
-> **Scope, stated plainly.** These are scoped MVP proofs of concept, not production systems. Every company, deal and dataset is fictional or built from public information, and nothing here uses employer data, systems or confidential material.
+> **Scope** These are scoped MVP proofs of concept, not production systems. Every company, deal and dataset is fictional or built from public information, and nothing here uses employer data, systems or confidential material.
 
 ## Start here (2 minutes)
 
