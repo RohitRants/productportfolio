@@ -10,7 +10,7 @@
 - [`agent-framework.md`](agent-framework.md) — agent architecture, roles, and sample prompts
 - [`data-model.md`](data-model.md) — input data schema and the 80/20 SKU-focus logic
 - [`lovable-prompt.md`](01-lovable-prompt.md) — the exact prompt used to build the working prototype in Lovable AI.
-- [`mockups/`](mockup.md) — screen-by-screen description of the dark-store ops dashboard
+- [`mockups/`](07-mockup.md) — screen-by-screen description of the dark-store ops dashboard
 
 ## Live prototype
 [Lovable demo link](https://novamart-ops.lovable.app)
