@@ -6,9 +6,9 @@
 
 ## Contents
 
-- [`PRD.md`](PRD.md) — problem statement, goals, success metrics, scope, human-in-the-loop design
-- [`agent-framework.md`](agent-framework.md) — agent architecture, roles, and sample prompts
-- [`data-model.md`](data-model.md) — input data schema and the 80/20 SKU-focus logic
+- [`PRD.md`](04-PRD.md) — problem statement, goals, success metrics, scope, human-in-the-loop design
+- [`agent-framework.md`](05-agent-framework.md) — agent architecture, roles, and sample prompts
+- [`data-model.md`](06-data-model.md) — input data schema and the 80/20 SKU-focus logic
 - [`lovable-prompt.md`](01-lovable-prompt.md) — the exact prompt used to build the working prototype in Lovable AI.
 - [`mockups/`](07-mockup.md) — screen-by-screen description of the dark-store ops dashboard
 
