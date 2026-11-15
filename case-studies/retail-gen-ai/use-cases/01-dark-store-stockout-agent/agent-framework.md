@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-A single-purpose agent, run on a schedule (every 30 minutes during store operating hours), with three logical steps: **Detect → Reason → Recommend**. It does not act autonomously in V1 (see PRD, Section 7).
+A single-purpose agent, run on a schedule (every 30 minutes during store operating hours), with three logical steps: **Detect → Reason → Recommend**. It does not act autonomously in V1 (see PRD, Section 7). Additionally, it has **architecture guardrails** to fix the stated confidence by the AI model. 
 
 ```
 [Inventory & POS data feed]
@@ -12,6 +12,8 @@ A single-purpose agent, run on a schedule (every 30 minutes during store operati
 [2. Reason] — checks against sales velocity, lead time, and known events (promotions, weather)
         ↓
 [3. Recommend] — produces a reorder recommendation + confidence score + plain-language rationale
+        ↓
+[4. Architecture Guardrails] — produces a deterministic way to calculate the confidence score proposed by the AI model
         ↓
 [Store Ops Lead reviews in dashboard] → Accept / Adjust / Dismiss
 ```
@@ -23,6 +25,7 @@ A single-purpose agent, run on a schedule (every 30 minutes during store operati
 | Detect | Continuously monitor stock-vs-velocity ratio per SKU | Fully automated (read-only) |
 | Reason | Contextualize the raw signal (is this a real risk or a data glitch/one-off spike) | Fully automated (read-only) |
 | Recommend | Produce a human-readable recommendation with confidence score | Automated output, human-approved action |
+| Architecture | Overall framework to fix the issues in the v1 version of prompt | Deterministic way to calculate confidence score |
 
 ## Sample Agent Prompt — Detect Step
 
