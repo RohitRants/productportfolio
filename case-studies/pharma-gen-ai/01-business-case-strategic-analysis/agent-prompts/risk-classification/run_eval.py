@@ -14,6 +14,7 @@ Examples
 Scoring is deterministic: tier is categorical, so no LLM judge is involved.
 """
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -43,6 +44,52 @@ GATE = {
 
 SUFFIX = ('\n\nRespond with a single JSON object and nothing else: '
           '{"tier": "Low" | "Medium" | "High", "reasoning": "<2-4 sentences>"}')
+
+
+
+# ---------------- prompt loading ----------------
+DEFAULT_PROMPTS = {"v1_baseline": "risk-classificationv1.md", "v2_enhanced": "risk-classificationv2.md"}
+
+
+def load_prompt(path):
+    """Return the exact prompt text. For .md files, the first fenced code block is the prompt
+    (the surrounding headings and links are documentation and are NOT sent to the model)."""
+    text = open(path, encoding="utf-8").read()
+    if path.lower().endswith(".md"):
+        m = re.search(r"```[^\n]*\n(.*?)\n```", text, re.S)
+        if not m:
+            raise SystemExit(f"{path}: no fenced code block found; the prompt must be inside ``` fences")
+        text = m.group(1)
+    return text.strip()
+
+
+def parse_versions(specs, here):
+    """Each spec is label=path (path relative to this folder) or a bare default label."""
+    out = {}
+    for spec in specs:
+        label, _, path = spec.partition("=")
+        path = path or DEFAULT_PROMPTS.get(label)
+        if not path:
+            raise SystemExit(f"unknown version '{label}'. Use label=path, or one of {list(DEFAULT_PROMPTS)}")
+        out[label] = load_prompt(os.path.join(here, path))
+    return out
+
+
+def sha(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
+
+
+def selftest(here):
+    errs = []
+    for label, path in DEFAULT_PROMPTS.items():
+        t = load_prompt(os.path.join(here, path))
+        if not t.startswith("You are a Risk Classification Agent"):
+            errs.append(f"{label}: prompt does not start with the expected sentence")
+        if "```" in t or t.startswith("#"):
+            errs.append(f"{label}: markdown leaked into the prompt")
+        print(f"{label}: {len(t)} chars, sha256 {sha(t)}")
+    print("SELFTEST FAILED: " + "; ".join(errs) if errs else "SELFTEST OK: prompts extracted cleanly")
+    raise SystemExit(1 if errs else 0)
 
 
 # ---------------- providers ----------------
@@ -193,12 +240,14 @@ def pct(x):
     return "n/a" if x is None else f"{x:.1%}"
 
 
-def write_report(path, args, cases, results, baselines):
+def write_report(path, args, cases, results, baselines, prov):
     gold_dist = Counter(c["gold"] for c in cases)
     L = [f"# Risk Classification Eval Report",
          f"- Run at: {datetime.now(timezone.utc).isoformat(timespec='seconds')}",
          f"- Provider/model: `{args.provider}` / `{args.model}`  |  runs per case: {args.runs}  |  temperature: {args.temperature}",
          f"- Cases: {len(cases)}  |  gold mix: {dict(gold_dist)}  |  rubric v1.0",
+         f"- Provenance (sha256 prefixes): cases `{prov['cases_sha256']}`, run_eval.py `{prov['run_eval_sha256']}`, "
+         f"prompts {prov['prompts']}",
          ""]
     if args.provider == "mock":
         L += ["> **MOCK RUN. Random outputs for plumbing tests. Do not cite any number below.**", ""]
@@ -239,23 +288,34 @@ def write_report(path, args, cases, results, baselines):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--provider", choices=list(PROVIDERS), required=True)
+    ap.add_argument("--provider", choices=list(PROVIDERS), default=None)
     ap.add_argument("--model", default="mock")
-    ap.add_argument("--versions", nargs="+", default=["v1_baseline", "v2_candidate"])
+    ap.add_argument("--versions", nargs="+", default=list(DEFAULT_PROMPTS),
+                    help="label=path.md pairs, or the default labels v1_baseline v2_enhanced")
+    ap.add_argument("--selftest", action="store_true", help="check that prompts load cleanly, then exit")
+    ap.add_argument("--dry-run", action="store_true", help="print the exact system prompt sent per version, then exit")
     ap.add_argument("--runs", type=int, default=3)
     ap.add_argument("--temperature", type=float, default=None, help="omit to match your production default")
     ap.add_argument("--cases", default="cases.jsonl")
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--outdir", default="results")
     args = ap.parse_args()
-    if args.provider != "mock" and args.model == "mock":
+    if not (args.selftest or args.dry_run) and not args.provider:
+        ap.error("--provider is required (anthropic, openai, or mock)")
+    if args.provider and args.provider != "mock" and args.model == "mock":
         ap.error("--model is required for real providers (use the model your prototype uses)")
 
     here = os.path.dirname(os.path.abspath(__file__))
     cases = [json.loads(l) for l in open(os.path.join(here, args.cases))]
+    if args.selftest:
+        selftest(here)
+    prompts = parse_versions(args.versions, here)
+    if args.dry_run:
+        for v, system in prompts.items():
+            print(f"===== {v} (sha256 {sha(system)}) =====\n{system}{SUFFIX}\n")
+        raise SystemExit(0)
     jobs = []
-    for v in args.versions:
-        system = open(os.path.join(here, "prompts", f"{v}.txt")).read().strip()
+    for v, system in prompts.items():
         jobs += [(v, system, c, k) for c in cases for k in range(args.runs)]
     with ThreadPoolExecutor(args.workers) as ex:
         raw = list(ex.map(lambda j: run_one(j, args.provider, args.model, args.temperature), jobs))
@@ -269,13 +329,16 @@ def main():
 
     cmap = {c["id"]: c for c in cases}
     results = {}
-    for v in args.versions:
+    for v in prompts:
         rows = [r for r in raw if r["version"] == v]
         fails = [{**r, "gold": cmap[r["case_id"]]["gold"], "stratum": cmap[r["case_id"]]["stratum"]}
                  for r in rows if r["pred"] != cmap[r["case_id"]]["gold"]]
         results[v] = (metrics(rows, cases), fails)
     baselines = {f"always {t}": metrics(baseline_rows(cases, t, args.runs), cases) for t in ["Medium", "High"]}
-    write_report(os.path.join(out, "report.md"), args, cases, results, baselines)
+    prov = {"cases_sha256": sha(open(os.path.join(here, args.cases), encoding="utf-8").read()),
+            "run_eval_sha256": sha(open(os.path.abspath(__file__), encoding="utf-8").read()),
+            "prompts": {v: sha(t) for v, t in prompts.items()}}
+    write_report(os.path.join(out, "report.md"), args, cases, results, baselines, prov)
     print(f"report: {os.path.join(out, 'report.md')}")
 
 
